@@ -2,127 +2,180 @@
 
 ---
 
-## Cú pháp cơ bản - Basic Syntax
+#### Mục lục - Table of Contents
 
-Ví dụ về một chương trình "Hello World" đơn giản:
+- [Chương trình C cơ bản](#chương-trình-c-cơ-bản---hello-world)
+- [Kiểu dữ liệu](#kiểu-dữ-liệu---data-types)
+- [Biến và Từ khoá](#biến-và-từ-khoá)
+
+---
+
+## Chương trình C cơ bản - Hello World!
+
+### 1. Sau đây là chương trình "Hello World!" đầu tiên bằng ngôn ngữ lập trình C.
 
 ```C
 #include <stdio.h>
 
 int main() {
-
     printf("Hello World!");
-
     return 0;
 }
 ```
 
-Output
+### 2. Phân tích cấu trúc chương trình
 
-```
-Hello World!
-```
+- Thư viện: Dòng `#include <stdio.h>` khai báo thư viện `stdio.h`, giúp sử dụng các hàm như `printf()` để in dữ liệu ra màn hình.
+- Hàm `main()`: Đây là điểm bắt đầu thực thi của mọi chương trình C. Mọi câu lệnh trong chương trình cần được viết bên trong hàm này.
+- Câu lệnh `printf`: Dùng để hiển thị nội dung chuỗi `"Hello World!"` ra màn hình. Chuỗi cần được đặt trong dấu ngoặc kép (`""`).
+- Câu lệnh `return 0;`: Xác định rằng chương trình đã chạy thành công và kết thúc.
 
-Ở đây,
+### 3. Các bước chạy chương trình:
 
-- `#include <stdio.h>`: Khai báo thư viện cần thiết. (thư viện này chứa hàm `printf()`)
-- `int main()`: Hàm `main()` là điểm vào của bất kỳ chương trình C nào.
-- `printf("Hello World!")`: Hàm `printf()` dùng để hiển thị xâu ký tự "Hello World!"
-- `return 0;`: Giá trị trả về bởi hàm `main()`
+- `Biên dịch (Compile)`: Mã nguồn bạn viết bằng ngôn ngữ lập trình C thì CPU của máy tính chưa thể thực thi được, muốn chạy được code C bạn cần biên dịch (Complile) code này thành mã máy. Trình biên dịch (Compiler) sẽ đảm nhiệm chức năng này Quá trình này kiểm tra lỗi cú pháp và chuẩn bị mã nguồn để chạy.
+- `Chạy (Run)`: Sau khi mã nguồn C của bạn được biên dịch thành mã máy thì máy tính có thể thực thi mã máy này và hiển thị cho bạn kết quả tương ứng. Đôi khi chương trình của bạn cũng phát sinh những lỗi trong lúc đang chạy ví dụ như chia cho số 0, lỗi bộ nhớ...
 
----
+### 4. Câu lệnh return 0;
 
-## Biến - Variables
+Câu lệnh này được sử dụng ở cuối hàm main() để chỉ ra rằng chương trình đã kết thúc thành công. Nếu có lỗi xảy ra, giá trị trả về có thể khác 0, giúp nhận biết lỗi.
 
-Biến là tên được đặt cho vị trí bộ nhớ lưu trữ một số dữ liệu.
-
-### 1. Cú pháp của biến
+Ví dụ 1: Phát sinh lỗi lúc chạy dẫn tới giá trị trả về của hàm main sẽ là 3221225725
 
 ```C
-    data_type variable_name; // Khai báo môt biến
-    data_type variable_name = initial_value; // Khởi tạo một biến (Khai báo và gán giá trị)
+#include <stdio.h>
+
+int main() {
+    int a[2828282828]; // Lỗi do yêu cầu quá nhiều bộ nhớ
+    return 0;
+}
 ```
 
-### 2. Các loại biến trong C
-
-- **Biến toàn cục (Global Variable):** Được khai báo bên ngoài mọi hàm và có thể sử dụng trong tất cả các hàm của chương trình.
+Ví dụ 2: Chương trình kết thúc ngay khi return được gọi
 
 ```C
-    int globalVar = 10; // Khai báo biến toàn cục
+#include <stdio.h>
+
+int main() {
+    printf("Hello World!\n");
+    return 0;
+    printf("Cac cau lenh nay se khong duoc thuc thi\n");
+    printf("hello world !\n");
+    return 0;
+}
 ```
-
-- **Biến cục bộ (Local Variable):** Chỉ tồn tại và có thể sử dụng trong hàm hoặc khối khai báo biến đó.
-
-```C
-    void myFunction() {
-    int localVar = 5; // Biến cục bộ, chỉ tồn tại trong myFunction
-    }
-```
-
-- **Biến tĩnh (Static Variable):** Khi được khai báo, giá trị của nó được giữ nguyên qua các lần gọi hàm.
-
-```C
-    void myFunction() {
-    static int staticVar = 1; // Giữ giá trị qua các lần gọi hàm
-    staticVar++;
-    }
-```
-
-- **Biến hằng (Constant Variable):** Được khai báo với từ khóa const, biến hằng không thể thay đổi giá trị sau khi đã khởi tạo.
-
-```C
-    const int constVar = 100; // Không thể thay đổi sau khi khởi tạo
-```
-
-### 3. Quy tắc đặt tên biến
-
-- Tên biến phải bắt đầu bằng chữ cái (a-z, A-Z) hoặc dấu gạch dưới `_`.
-- Không được chứa khoảng trắng hoặc ký tự đặc biệt khác.
-- Nên sử dụng tên có ý nghĩa để dễ đọc và bảo trì, ví dụ: `totalPrice` thay vì `tp`.
-- Không được đặt 2 biến có cùng tên trong cùng một phạm vi như: `int a; float a`
-- Tránh trùng tên biến với các từ khóa của C như `int`, `return`, `float`, v.v.
 
 ---
 
 ## Kiểu dữ liệu - Data Types
 
-> Kiểu dữ liệu trong C là loại dữ liệu mà một biến có thể lưu trữ. Mỗi kiểu dữ liệu có kích thước khác nhau. Trong C có ba nhóm chính:
->
-> - **Basic Data Types** - Kiểu dữ liệu cơ bản
-> - **Derived Data Types** - Kiểu dữ liệu dẫn xuất
-> - **User-Defined Data Types** - Kiểu dữ liệu do người dùng định nghĩa
+### 1. Kiểu dữ liệu và đặc tả
 
-### 1. Một số kiểu dữ liệu cơ bản - Basic Data Types
+Kiểu dữ liệu xác định loại giá trị mà biến có thể lưu trữ. Dưới đây là bảng các kiểu dữ liệu chính trong C và đặc tả của chúng:
 
-> Các kiểu dữ liệu cơ bản được tích hợp sẵn trong ngôn ngữ C, không phụ thuộc vào bất kỳ kiểu dữ liệu nào khác. Dưới đây là các kiểu dữ liệu cơ bản:
->
-> - **`char`**: Đại diện cho ký tự.
-> - **`int`**: Đại diện cho số nguyên.
-> - **`float`**: Đại diện cho số thập phân với độ chính xác đến 6-7 chữ số.
-> - **`double`**: Đại diện cho số thập phân với độ chính xác đến 15 chữ số.
-> - **`void`**: Đại diện cho thực thể không có giá trị.
+| Kiểu Dữ Liệu         | Kích thước (byte) | Giá trị có thể lưu           | Giới hạn có thể lưu                                     | Đặc tả (Format Specifier) |
+| -------------------- | ----------------- | ---------------------------- | ------------------------------------------------------- | ------------------------- |
+| `short`              | 2 byte            | Số nguyên                    | -32,768 -> 32,767                                       | `%hi`                     |
+| `unsigned short`     | 2 byte            | Số nguyên không dấu          | 0 -> 65,535                                             | `%hu`                     |
+| `int`                | 4 byte            | Số nguyên                    | -2,147,483,648 -> 2,147,483,647                         | `%d`                      |
+| `unsigned int`       | 4 byte            | Số nguyên không dấu          | 0 -> 4,294,967,295                                      | `%u`                      |
+| `long long`          | 8 byte            | Số nguyên                    | -9,223,372,036,854,775,808 -> 9,223,372,036,854,775,807 | `%lld`                    |
+| `unsigned long long` | 8 byte            | Số nguyên không dấu          | 0 -> 18,446,744,073,709,551,615                         | `%llu`                    |
+| `char`               | 1 byte            | Số nguyên, ký tự             | -128 -> 127                                             | `%c`                      |
+| `unsigned char`      | 1 byte            | Số nguyên không dấu, ký tự   | 0 -> 255                                                | `%c`                      |
+| `float`              | 4 byte            | Số thực                      | 3.4E-38 -> 3.4E+38                                      | `%f`                      |
+| `double`             | 8 byte            | Số thực với độ chính xác cao | 1.7E-308 -> 1.7E+308                                    | `%lf`                     |
+
+### 2. Kiểu dữ liệu số nguyên
+
+C có nhiều kiểu dữ liệu số nguyên, nhưng bạn chỉ cần nhớ hai kiểu phổ biến là int và long long. Các kiểu số nguyên có thể chia thành hai loại: có dấu và không dấu.
+
+- Số nguyên có dấu (`signed`): Lưu trữ cả số âm và số dương.
+- Số nguyên không dấu (`unsigned`): Chỉ lưu trữ số dương.
+
+**Lưu ý quan trọng**:
+
+Số nguyên không thể lưu phần thập phân. Nếu bạn muốn lưu giá trị như `3.14`, bạn cần sử dụng kiểu dữ liệu số thực (float, double).
+Khi giá trị vượt quá giới hạn của kiểu dữ liệu số nguyên, sẽ xảy ra tình trạng tràn số (`overflow`) và kết quả sẽ sai.
+
+**Cách tính giới hạn của số nguyên**:
+
+Kiểu dữ liệu có K bit có thể lưu trữ các giá trị từ:
+
+- Số nguyên có dấu: Từ **$-2^{(K-1)}$** đến **$2^{(K-1)} - 1$**.
+- Số nguyên không dấu: Từ 0 đến **$2^K - 1$**.
 
 Ví dụ:
 
-```C
-    char c = 'a';
-    int integer = 24;
-    float f = 24.32;
-    double d = 24.3435;
-    void v;
-```
+- `int` (4 byte = 32 bit): Lưu giá trị từ khoảng -2,147,483,648 đến 2,147,483,647.
+- `long long` (8 byte = 64 bit): Lưu giá trị từ khoảng -9.223.372.036.854.775.808 đến 9.223.372.036.854.775.807.
 
-> Kích thước của các kiểu dữ liệu cơ bản này có thể được thay đổi bằng cách sử dụng các Data Type Modifiers như:
->
-> - **`short`**
-> - **`long`**
-> - **`signed`**
-> - **`unsigned`**
+### 3. Kiểu dữ liệu số thực
+
+Số thực lưu trữ các giá trị có phần thập phân.
+
+- `float`: Số thực với độ chính xác đơn, có thể lưu được khoảng 6 chữ số thập phân.
+- `double`: Số thực với độ chính xác kép, có thể lưu được khoảng 15 chữ số thập phân.
+
+**Lưu ý**: Mặc dù `float` và `double` có thể lưu trữ số nguyên, nhưng nếu bài toán yêu cầu sử dụng số nguyên (ví dụ: đếm số lượng), bạn nên sử dụng `int` hoặc `long long` thay vì `float` hoặc `double` để tránh sai số do tính toán.
+
+### 4. Kiểu ký tự
+
+Để lưu trữ một ký tự (chữ cái, chữ số, ký tự đặc biệt) trong C, bạn sử dụng kiểu dữ liệu `char`. Mỗi `char` chỉ lưu được một ký tự đơn lẻ như:
+
+- Ký tự chữ cái: `'a'`, `'B'`, `'x'`
+- Ký tự số: '0', `'1'`, `'2'`
+- Ký tự đặc biệt: `'%'`, `'$'`, `'#'`
+
+**Lưu ý**: `char` không thể lưu một chuỗi ký tự (ví dụ `"hello"`), mà chỉ có thể lưu một ký tự duy nhất. Để lưu một chuỗi, bạn sẽ sử dụng một mảng `char` sau này.
+
+---
+
+## Biến và Từ khoá
+
+### 1. Biến và quy tắc đặt tên biến
+
+Biến (variable) được sử dụng để lưu trữ giá trị cho bài toán. Hầu như mọi chương trình của các bạn đều sử dụng đến các biến, để khai báo biến trong C bạn cần chỉ ra 3 thứ:
+
+- Kiểu dữ liệu của biến đó là gì ? Ví dụ : int, long long, float, double...
+- Tên biến mà bạn muốn đặt cho nó là gì ? Ví dụ : chuVi, dienTich, salary, point...
+- Giá trị mà bạn muốn khởi tạo cho nó là gì? Nếu bạn khai báo biến mà không khởi tạo giá trị thì nó sẽ có giá trị ngẫu nhiên.
+
+**Cú pháp đặt tên biến** : [Kiểu dữ liệu] [Tên biến];
 
 Ví dụ:
 
-```C
-    unsigned int var1;
-    long double var2;
-    long int var3;
+```c
+#include <stdio.h>
+
+int main(){
+    int chuvi;              // Khai bao bien khong khoi tao gia tri
+    long long dientich;
+
+    float bankinh = 2.5;    // Khai bao bien co khoi tao gia tri
+    double diem = 9.0;
+
+    char x = '@', y = 'Z', t = '#'; // Khai bao nhieu bien co cung kieu du lieu tren cung 1 dong
+
+    return 0;
+}
 ```
+
+### 2. Quy tắc đặt tên biến
+
+Trong ngôn ngữ lập trình C, bạn cần phải tuân theo những quy tắc sau khi đặt tên biến:
+
+| **Quy Tắc**                                                   | **Ví Dụ Đặt Tên Biến Sai**              |
+| ------------------------------------------------------------- | --------------------------------------- |
+| Tên biến không được bắt đầu bằng chữ số                       | 123bankinh, 28tech, 1dientich, 0diem... |
+| Tên biến không được chứa dấu cách hoặc các ký tự đặc biệt     | ban kinh, dien#tich, chu$vi...          |
+| Tên biến không được trùng với các keyword có sẵn trong C      | int, main, float, for, while...         |
+| Không được đặt 2 biến cùng tên, kể cả chúng khác kiểu dữ liệu | int a; float a;                         |
+| Tên biến trong C có phân biệt chữ hoa và chữ thường           | banKinh và bankinh là 2 biến khác nhau  |
+
+### 3. Từ khoá - keyword
+
+Các ngôn ngữ lập trình đều có bộ từ khóa có sẵn, bạn không nhất thiết phải học thuộc những từ khóa này vì trong quá trình học dần dần bạn sẽ quen mặt với các từ khóa này và nhớ được chúng. Chú ý rằng bạn không được đặt tên biến trong chương trình của mình trùng với tên từ khóa.
+
+Danh sách các từ khóa thường gặp trong ngôn ngữ C:
+
+`auto`, `double`, `int`, `struct`, `break`, `else`, `long`, `switch`, `case`, `enum`, `register`, `typedef`, `char`, `extern`, `return`, `union`, `continue`, `for`, `signed`, `void`, `do`, `if`, `static`, `while`, `default`, `goto`, `sizeof`, `volatile`, `const`, `float`, `short`, `unsigned`
