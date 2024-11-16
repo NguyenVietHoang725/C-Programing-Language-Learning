@@ -4,9 +4,18 @@
 
 #### Mục lục - Table of Contents
 
-- [Chương trình C cơ bản](#chương-trình-c-cơ-bản---hello-world)
-- [Kiểu dữ liệu](#kiểu-dữ-liệu---data-types)
-- [Biến và Từ khoá](#biến-và-từ-khoá)
+- [Kiểu dữ liệu - Toán tử - Nhập xuất](#kiểu-dữ-liệu---toán-tử---nhập-xuất)
+  - [Chương trình C cơ bản](#chương-trình-c-cơ-bản---hello-world)
+  - [Kiểu dữ liệu](#kiểu-dữ-liệu---data-types)
+  - [Biến và Từ khoá](#biến-và-từ-khoá)
+  - [Chú thích](#chú-thích---comment)
+  - [Printf và Scanf](#printf-và-scanf---nhập-xuất-dữ-liệu)
+  - [Ép kiểu dữ liệu](#ép-kiểu-dữ-liệu)
+- [Cấu trúc điều khiển](#cấu-trúc-điều-khiển)
+
+---
+
+# Kiểu dữ liệu - Toán tử - Nhập xuất
 
 ---
 
@@ -144,7 +153,7 @@ Biến (variable) được sử dụng để lưu trữ giá trị cho bài toá
 
 Ví dụ:
 
-```c
+```C
 #include <stdio.h>
 
 int main(){
@@ -179,3 +188,221 @@ Các ngôn ngữ lập trình đều có bộ từ khóa có sẵn, bạn không
 Danh sách các từ khóa thường gặp trong ngôn ngữ C:
 
 `auto`, `double`, `int`, `struct`, `break`, `else`, `long`, `switch`, `case`, `enum`, `register`, `typedef`, `char`, `extern`, `return`, `union`, `continue`, `for`, `signed`, `void`, `do`, `if`, `static`, `while`, `default`, `goto`, `sizeof`, `volatile`, `const`, `float`, `short`, `unsigned`
+
+---
+
+## Chú thích - Comment
+
+### 1. Vì sao nên Chú thích khi viết code
+
+Chú thích không được coi là mà nguồn và sẽ được loại bỏ bởi trình biên dịch khi biên dịch mã nguồn của bạn.
+
+Những chức năng chính của chú thích :
+
+- **Giải thích mã nguồn** - Chú thích có thể được sử dụng như là mã giả với mục đích giải thích code của bạn sẽ thực hiện công việc gì. Khi một lập trình viên khác hay chính bạn đọc mã nguồn của bạn đã từng viết trước đó có thể nhanh chóng nắm bắt ý tưởng của mã nguồn.
+- **Mô tả thuật toán** - Khi các thuật toán bạn cài đặt trở nên phức tạp, bạn cần mô tả và giải thích thuật toán này
+- **Metadata** - Siêu dữ liệu cho chương trình, đôi khi chú thích được sử dụng để mô tả chức năng và các thông tin cần thiết về file mã nguồn
+- **Debugging** - Gỡ lỗi bằng chú thích là một hành động mà mình sử dụng rất nhiều trong quá trình lập trình, khi bạn phát hiện ra những câu lệnh có thể gây lỗi bạn không nhất thiết phải xóa nó đi ngay mà có thể biến nó thành một dòng chú thích để tạm thời loại bỏ nó.
+
+Nhìn chung chú thích có nhiều lợi ích và là một thói quen tốt của một lập trình viên
+
+### 2. Các kiểu chú thích
+
+- Chú thích trên một dòng, sử dụng `'//'`; Phím tắt nhanh: `Ctrl + '/'`
+- Chú thích trên nhiều dòng, sử dụng dấu đóng mở `'/*'` và `'*/'`
+
+```C
+#include <stdio.h>
+
+int main(){
+    // Day la chu thich tren 1 dong.
+    // Khai bao bien n kieu long long co gia tri la 12
+    long long n = 12;
+
+    /*
+    Day la chu thich
+    tren nhieu dong.
+    */
+    /* Cau lenh sau in
+    dong chu ra man hinh */
+    printf("hello world !\n");
+
+    return 0;
+}
+```
+
+---
+
+## Printf và Scanf - Nhập xuất dữ Liệu
+
+### 1. Xuất dữ liệu với hàm `printf`
+
+Để in dữ liệu hay hiển thị kết quả, chuỗi ký tự, số... ra màn hình bạn cần sử dụng hàm `printf` trong thư viện `stdio.h`
+
+**Cú pháp**: `printf("Chuỗi_định_dạng", Đối_số);`
+
+Trong đó:
+
+- Chuỗi định dạng có thể là nội dung của một chuỗi ký tự hoặc đặc tả kiểu dữ liệu của biến mà bạn muốn in ra màn hình.
+- Đối số : Đây thường là các biến mà bạn sẽ in ra, số lượng đối số sẽ bằng số lượng đặc tả trong chuỗi định dạng.
+
+**Chú ý**: Để in ra giá trị của số thực `float` và `double` với `x` chữ số phần thập phân thì ở phần đặc tả có thể viết `%.xf` hoặc `%.xlf`
+
+Ví dụ:
+
+```C
+#include <stdio.h>
+
+int main(){
+    printf("28tech.com.vn\n");
+    int n = 28;
+    printf("Gia tri cua n la : %d\n", n);
+    long long m = 28282828282828;
+    printf("Gia tri cua m la : %lld\n", m);
+    char kitu = '@';
+    printf("Gia tri cua kitu la : %c\n", kitu);
+    float f = 24.1725;
+    printf("Gia tri cua f : %.2f\n", f);
+
+    // In ra nhieu bien su dung 1 cau lenh printf
+    int a = 1, b = 2, c = 3;
+    printf("%d %d %d\n", a, b, c);
+
+    return 0;
+}
+```
+
+### 2. Nhập dữ liệu với hàm `scanf`
+
+Hàm scanf giúp bạn chủ động với việc gán giá trị cho biến từ bàn phím khi chạy chương trình, bạn có thể yêu cầu người dùng nhập giá trị cho biến của bạn thay vì gán thủ công.
+
+**Cú pháp**: `scanf("Đặc_tả", &biến);`
+
+Khi bạn nhập giá trị cho 1 biến từ bàn phím bạn cần truyền đặc tả của nó vào phần chuỗi định dạng, kèm theo dấu `&` trước tên biến. Dấu `&` này thể hiện địa chỉ của biến trong bộ nhớ, có thể hiểu đơn giản mỗi khi bạn nhập giá trị cho biến từ bàn phím thì hàm `scanf` sẽ tìm đến địa chỉ của biến đó trong bộ nhớ để gán cho nó giá trị mà bạn đã nhập từ bàn phím.
+
+Mỗi khi nhập xong giá trị cho 1 biến bạn ấn enter thì giá trị này sẽ được gán cho biến tương ứng
+
+Ví dụ:
+
+```C
+#include <stdio.h>
+
+int main(){
+    int a, b, c;
+    printf("Nhap a : ");
+    scanf("%d", &a);
+    printf("Nhap b va c : ");
+    scanf("%d %d", &b, &c);
+    printf("a = %d, b = %d, c = %d\n", a, b, c);
+    return 0;
+}
+```
+
+### 3. Chú ý khi nhập 1 ký tự
+
+Để nhập 1 ký tự từ bàn phím bạn có thể dùng hàm `scanf` hoặc `getchar()`
+
+Bạn sẽ gặp phải tình huống đó là câu lệnh nhập ký tự sẽ nhập phải phím enter sau số ở dòng trên, trong trường hợp này bạn cần phải xử lý phím enter đó
+
+```C
+#include <stdio.h>
+
+int main(){
+    char kitu1;
+    printf("Nhap ki tu : ");
+    scanf("%c", &kitu1); // Nhap ki tu su dung scanf()
+    printf("Ki tu vua nhap : %c\n", kitu1);
+
+    getchar(); // Xu li phim Enter
+
+    char kitu2;
+    printf("Nhap ki tu : ");
+    kitu2 = getchar(); // Nhap ki tu su dung getchar()
+    printf("Ki tu vua nhap : %c\n", kitu2);
+
+    return 0;
+}
+```
+
+---
+
+## Ép kiểu dữ Liệu
+
+### 1. Ép kiểu ngầm định
+
+**Ép kiểu ngầm định** - `Implicit Type Casting` là khi chuyển đổi kiểu dữ liệu mà không làm mất đi giá trị ban đầu của biến.
+
+Ép kiểu ngầm định được thực hiện một cách tự động khi bạn gán giá trị của một biến này cho biến khác mang kiểu dữ liệu tương thích, thường là kiểu dữ liệu bao hàm.
+
+Ví dụ:
+
+```C
+#include <stdio.h>
+
+int main(){
+    int n = 100;
+    long long m = n; // Implicit casting
+    float x = 20.18923;
+    double y = x; // Implicit casting
+    printf("%lld %.5lf\n", m, y);
+}
+Output :
+100 20.18923
+```
+
+Gán giá trị của biến có kiểu dữ liệu lớn hơn cho biến có kiểu dữ liệu nhỏ hơn có thể gây mất mát giá trị
+
+Ví dụ:
+
+```C
+#include <stdio.h>
+
+int main(){
+    long long m = 182831892845128;
+    int n = m;
+    printf("%d\n", n);
+    float x = 3.123124;
+    int y = x;
+    printf("%d\n", y);
+}
+Output :
+-569978296
+3
+```
+
+### 2. Ép kiểu tường minh
+
+**Ép kiểu tường minh** - `Explicit type casting` được thực hiện bởi lập trình viên trong một vài tình huống bắt buộc.
+
+**Cú pháp**: `(data_type)Biểu thức`
+
+Ví dụ:
+
+```C
+#include <stdio.h>
+
+int main(){
+    int a = 10, b = 3;
+    float div1 = a / b;
+    float div2 = (float) a / b; // Ép kiểu tường minh
+    printf("%.2f %.2f\n", div1, div2);
+}
+Output :
+3.00 3.33
+```
+
+---
+
+## Toán tử - Operator
+
+---
+
+## Các hàm toán học phổ biến
+
+---
+
+# Cấu trúc điều khiển
+
+---
+
+## Cấu trúc rẽ nhánh - If Else
