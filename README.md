@@ -2,7 +2,7 @@
 
 ---
 
-#### Mục lục - Table of Contents
+## Mục lục - Table of Contents
 
 - [C Language Cheat Sheet](#c-language-cheat-sheet) - [Mục lục - Table of Contents](#mục-lục---table-of-contents)
 - [Kiểu dữ liệu - Toán tử - Nhập xuất](#kiểu-dữ-liệu---toán-tử---nhập-xuất)
