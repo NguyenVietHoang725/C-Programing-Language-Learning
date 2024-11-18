@@ -4,10 +4,7 @@
 
 #### Mục lục - Table of Contents
 
-# Mục lục
-
 - [C Language Cheat Sheet](#c-language-cheat-sheet) - [Mục lục - Table of Contents](#mục-lục---table-of-contents)
-- [Mục lục](#mục-lục)
 - [Kiểu dữ liệu - Toán tử - Nhập xuất](#kiểu-dữ-liệu---toán-tử---nhập-xuất)
   - [I. Chương trình C cơ bản - Hello World!](#i-chương-trình-c-cơ-bản---hello-world)
     - [1. Sau đây là chương trình "Hello World!" đầu tiên bằng ngôn ngữ lập trình C.](#1-sau-đây-là-chương-trình-hello-world-đầu-tiên-bằng-ngôn-ngữ-lập-trình-c)
@@ -27,8 +24,8 @@
     - [1. Vì sao nên Chú thích khi viết code](#1-vì-sao-nên-chú-thích-khi-viết-code)
     - [2. Các kiểu chú thích](#2-các-kiểu-chú-thích)
   - [V. Printf và Scanf - Nhập xuất dữ Liệu](#v-printf-và-scanf---nhập-xuất-dữ-liệu)
-    - [1. Xuất dữ liệu với hàm printf](#1-xuất-dữ-liệu-với-hàm-printf)
-    - [2. Nhập dữ liệu với hàm scanf](#2-nhập-dữ-liệu-với-hàm-scanf)
+    - [1. Xuất dữ liệu với hàm `printf`](#1-xuất-dữ-liệu-với-hàm-printf)
+    - [2. Nhập dữ liệu với hàm `scanf`](#2-nhập-dữ-liệu-với-hàm-scanf)
     - [3. Chú ý khi nhập 1 ký tự](#3-chú-ý-khi-nhập-1-ký-tự)
   - [VI. Ép kiểu dữ Liệu](#vi-ép-kiểu-dữ-liệu)
     - [1. Ép kiểu ngầm định](#1-ép-kiểu-ngầm-định)
