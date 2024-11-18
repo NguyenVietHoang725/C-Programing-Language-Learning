@@ -4,42 +4,53 @@
 
 #### Mục lục - Table of Contents
 
+# Mục lục
+
 - [C Language Cheat Sheet](#c-language-cheat-sheet) - [Mục lục - Table of Contents](#mục-lục---table-of-contents)
+- [Mục lục](#mục-lục)
 - [Kiểu dữ liệu - Toán tử - Nhập xuất](#kiểu-dữ-liệu---toán-tử---nhập-xuất)
-  - [Chương trình C cơ bản - Hello World!](#chương-trình-c-cơ-bản---hello-world)
+  - [I. Chương trình C cơ bản - Hello World!](#i-chương-trình-c-cơ-bản---hello-world)
     - [1. Sau đây là chương trình "Hello World!" đầu tiên bằng ngôn ngữ lập trình C.](#1-sau-đây-là-chương-trình-hello-world-đầu-tiên-bằng-ngôn-ngữ-lập-trình-c)
     - [2. Phân tích cấu trúc chương trình](#2-phân-tích-cấu-trúc-chương-trình)
     - [3. Các bước chạy chương trình:](#3-các-bước-chạy-chương-trình)
     - [4. Câu lệnh return 0;](#4-câu-lệnh-return-0)
-  - [Kiểu dữ liệu - Data Types](#kiểu-dữ-liệu---data-types)
+  - [II. Kiểu dữ liệu - Data Types](#ii-kiểu-dữ-liệu---data-types)
     - [1. Kiểu dữ liệu và đặc tả](#1-kiểu-dữ-liệu-và-đặc-tả)
     - [2. Kiểu dữ liệu số nguyên](#2-kiểu-dữ-liệu-số-nguyên)
     - [3. Kiểu dữ liệu số thực](#3-kiểu-dữ-liệu-số-thực)
     - [4. Kiểu ký tự](#4-kiểu-ký-tự)
-  - [Biến và Từ khoá](#biến-và-từ-khoá)
+  - [III. Biến và Từ khoá](#iii-biến-và-từ-khoá)
     - [1. Biến và quy tắc đặt tên biến](#1-biến-và-quy-tắc-đặt-tên-biến)
     - [2. Quy tắc đặt tên biến](#2-quy-tắc-đặt-tên-biến)
     - [3. Từ khoá - keyword](#3-từ-khoá---keyword)
-  - [Chú thích - Comment](#chú-thích---comment)
+  - [IV. Chú thích - Comment](#iv-chú-thích---comment)
     - [1. Vì sao nên Chú thích khi viết code](#1-vì-sao-nên-chú-thích-khi-viết-code)
     - [2. Các kiểu chú thích](#2-các-kiểu-chú-thích)
-  - [Printf và Scanf - Nhập xuất dữ Liệu](#printf-và-scanf---nhập-xuất-dữ-liệu)
-    - [1. Xuất dữ liệu với hàm `printf`](#1-xuất-dữ-liệu-với-hàm-printf)
-    - [2. Nhập dữ liệu với hàm `scanf`](#2-nhập-dữ-liệu-với-hàm-scanf)
+  - [V. Printf và Scanf - Nhập xuất dữ Liệu](#v-printf-và-scanf---nhập-xuất-dữ-liệu)
+    - [1. Xuất dữ liệu với hàm printf](#1-xuất-dữ-liệu-với-hàm-printf)
+    - [2. Nhập dữ liệu với hàm scanf](#2-nhập-dữ-liệu-với-hàm-scanf)
     - [3. Chú ý khi nhập 1 ký tự](#3-chú-ý-khi-nhập-1-ký-tự)
-  - [Ép kiểu dữ Liệu](#ép-kiểu-dữ-liệu)
+  - [VI. Ép kiểu dữ Liệu](#vi-ép-kiểu-dữ-liệu)
     - [1. Ép kiểu ngầm định](#1-ép-kiểu-ngầm-định)
     - [2. Ép kiểu tường minh](#2-ép-kiểu-tường-minh)
-  - [Toán tử - Operator](#toán-tử---operator)
-  - [Các hàm toán học phổ biến](#các-hàm-toán-học-phổ-biến)
+  - [VII. Toán tử - Operator](#vii-toán-tử---operator)
+  - [VIII. Các hàm toán học phổ biến](#viii-các-hàm-toán-học-phổ-biến)
 - [Cấu trúc điều khiển](#cấu-trúc-điều-khiển)
-  - [Cấu trúc rẽ nhánh - If Else](#cấu-trúc-rẽ-nhánh---if-else)
+  - [I. Cấu trúc rẽ nhánh - If Else](#i-cấu-trúc-rẽ-nhánh---if-else)
     - [1. Câu lệnh if](#1-câu-lệnh-if)
     - [2. Câu lệnh if else](#2-câu-lệnh-if-else)
     - [3. Câu lệnh if else lồng nhau](#3-câu-lệnh-if-else-lồng-nhau)
     - [4. Câu lệnh if else if](#4-câu-lệnh-if-else-if)
-  - [Cấu trúc rẽ nhánh - Switch Case](#cấu-trúc-rẽ-nhánh---switch-case)
-  - [Câu lệnh goto](#câu-lệnh-goto)
+  - [II. Cấu trúc rẽ nhánh - Switch Case](#ii-cấu-trúc-rẽ-nhánh---switch-case)
+  - [III. Câu lệnh goto](#iii-câu-lệnh-goto)
+- [Vòng lặp](#vòng-lặp)
+  - [I. Vòng lặp for](#i-vòng-lặp-for)
+  - [II. Vòng lặp while](#ii-vòng-lặp-while)
+  - [III. Vòng lặp do-while](#iii-vòng-lặp-do-while)
+  - [IV. Câu lệnh break và continue](#iv-câu-lệnh-break-và-continue)
+    - [1. Câu lệnh break](#1-câu-lệnh-break)
+    - [2. Câu lệnh continue](#2-câu-lệnh-continue)
+    - [3. So sánh break và continue](#3-so-sánh-break-và-continue)
 
 ---
 
@@ -47,7 +58,7 @@
 
 ---
 
-## Chương trình C cơ bản - Hello World!
+## I. Chương trình C cơ bản - Hello World!
 
 ### 1. Sau đây là chương trình "Hello World!" đầu tiên bằng ngôn ngữ lập trình C.
 
@@ -103,7 +114,7 @@ int main() {
 
 ---
 
-## Kiểu dữ liệu - Data Types
+## II. Kiểu dữ liệu - Data Types
 
 ### 1. Kiểu dữ liệu và đặc tả
 
@@ -167,7 +178,7 @@ Số thực lưu trữ các giá trị có phần thập phân.
 
 ---
 
-## Biến và Từ khoá
+## III. Biến và Từ khoá
 
 ### 1. Biến và quy tắc đặt tên biến
 
@@ -219,7 +230,7 @@ Danh sách các từ khóa thường gặp trong ngôn ngữ C:
 
 ---
 
-## Chú thích - Comment
+## IV. Chú thích - Comment
 
 ### 1. Vì sao nên Chú thích khi viết code
 
@@ -261,7 +272,7 @@ int main(){
 
 ---
 
-## Printf và Scanf - Nhập xuất dữ Liệu
+## V. Printf và Scanf - Nhập xuất dữ Liệu
 
 ### 1. Xuất dữ liệu với hàm `printf`
 
@@ -354,7 +365,7 @@ int main(){
 
 ---
 
-## Ép kiểu dữ Liệu
+## VI. Ép kiểu dữ Liệu
 
 ### 1. Ép kiểu ngầm định
 
@@ -421,11 +432,11 @@ Output :
 
 ---
 
-## Toán tử - Operator
+## VII. Toán tử - Operator
 
 ---
 
-## Các hàm toán học phổ biến
+## VIII. Các hàm toán học phổ biến
 
 ---
 
@@ -433,7 +444,7 @@ Output :
 
 ---
 
-## Cấu trúc rẽ nhánh - If Else
+## I. Cấu trúc rẽ nhánh - If Else
 
 ### 1. Câu lệnh if
 
@@ -568,7 +579,9 @@ else {
   - Khối lệnh else có thể có hoặc không
   - Khi rẽ nhánh nào được thực hiện thì các nhánh khác sẽ không được thực hiện, cấu trúc sẽ kết thúc
 
-## Cấu trúc rẽ nhánh - Switch Case
+---
+
+## II. Cấu trúc rẽ nhánh - Switch Case
 
 Switch case sử dụng tương đối giống if và else if, nó cũng giúp bạn có thể kiểm tra nhiều điều kiện để thực hiện các rẽ nhánh khác nhau.
 
@@ -624,7 +637,9 @@ Output :
 THREE
 ```
 
-## Câu lệnh goto
+---
+
+## III. Câu lệnh goto
 
 Câu lệnh goto cho phép di chuyển tới các vị trí cụ thể trong chương trình bằng cách gán nhãn cho các câu lệnh.
 
@@ -662,3 +677,142 @@ Output:
 hoangnv
 lap trinh C
 ```
+
+---
+
+# Vòng lặp
+
+---
+
+## I. Vòng lặp for
+
+Vòng lặp for là công cụ cơ bản và quan trọng trong lập trình C, giúp thực hiện một đoạn mã nhiều lần theo ý muốn.
+
+- Cú pháp:
+
+```C
+for (Câu_lệnh_khởi_tạo; Điều_kiện_lặp; Câu_lệnh_cập_nhật) {
+    // code
+}
+```
+
+- Hoạt động:
+
+  - Khởi tạo: Thực hiện một lần khi bắt đầu vòng lặp.
+  - Kiểm tra điều kiện: Nếu đúng, thực thi khối lệnh; nếu sai, kết thúc vòng lặp.
+  - Cập nhật: Sau khi khối lệnh được thực thi, thực hiện cập nhật và quay lại kiểm tra điều kiện.
+
+- Sơ đồ khối:
+
+---
+
+## II. Vòng lặp while
+
+Vòng lặp while là một trong những vòng lặp phổ biến, dễ hiểu và thường được sử dụng trong lập trình C.
+
+- Cú pháp:
+
+```C
+while (condition) {
+    // code
+}
+```
+
+- Hoạt động:
+
+  - Kiểm tra điều kiện: Nếu điều kiện condition là đúng, thực thi khối lệnh; nếu sai, vòng lặp kết thúc.
+  - Thực thi: Sau khi chạy xong khối lệnh, quay lại kiểm tra điều kiện.
+  - Lặp lại cho đến khi điều kiện sai. Nếu điều kiện không bao giờ sai, vòng lặp sẽ lặp vô tận.
+
+- Sơ đồ khối:
+
+---
+
+## III. Vòng lặp do-while
+
+Vòng lặp do-while tương tự như vòng lặp while, nhưng có một điểm khác biệt quan trọng: nó thực hiện khối lệnh trước, sau đó mới kiểm tra điều kiện.
+
+- Cú pháp:
+
+```C
+do {
+    // Code
+} while (condition);
+```
+
+- Hoạt động:
+
+  - Thực hiện khối lệnh bên trong do lần đầu tiên, không kiểm tra điều kiện.
+  - Sau đó, kiểm tra điều kiện condition.
+    - Nếu điều kiện đúng, khối lệnh lặp lại.
+    - Nếu điều kiện sai, vòng lặp kết thúc.
+  - Tiếp tục lặp lại cho đến khi điều kiện sai. Nếu điều kiện luôn đúng, vòng lặp sẽ lặp vô tận.
+
+- Sơ đồ khối:
+
+---
+
+## IV. Câu lệnh break và continue
+
+### 1. Câu lệnh break
+
+- Mục đích: Dừng vòng lặp (for, while, do-while) ngay lập tức.
+- Hoạt động: Khi break được thực thi, vòng lặp kết thúc ngay, các lệnh bên dưới break không chạy.
+- Lưu ý: Với vòng lặp lồng nhau, break chỉ dừng vòng lặp gần nhất chứa nó.
+
+- Ví dụ 1: Dừng vòng lặp khi đạt điều kiện:
+
+```C
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) break;
+    printf("%d\n", i);
+}
+// Output: 1 2
+```
+
+- Ví dụ 2: Tìm Ước Chung Lớn Nhất (UCLN):
+
+```C
+int a = 18, b = 12;
+for (int i = (a < b ? a : b); i >= 1; i--) {
+    if (a % i == 0 && b % i == 0) {
+        printf("%d\n", i); // Output: 6
+        break;
+    }
+}
+```
+
+### 2. Câu lệnh continue
+
+- Mục đích: Bỏ qua các lệnh bên dưới trong vòng lặp hiện tại và chuyển ngay sang lần lặp tiếp theo.
+- Lưu ý: Với vòng lặp lồng nhau, continue chỉ áp dụng cho vòng lặp gần nhất.
+
+- Ví dụ 1: Bỏ qua số chẵn:
+
+```C
+for (int i = 1; i <= 5; i++) {
+    if (i % 2 == 0) continue;
+    printf("%d\n", i);
+}
+// Output: 1 3 5
+```
+
+- Ví dụ 2: Tính tổng số nguyên dương, bỏ qua số âm:
+
+```C
+int tong = 0, n;
+while (1) {
+    scanf("%d", &n);
+    if (n < 0) continue;
+    if (n == 0) break;
+    tong += n;
+}
+printf("%d\n", tong);
+```
+
+### 3. So sánh break và continue
+
+| **Tính năng**       | **`break`**                     | **`continue`**                     |
+| ------------------- | ------------------------------- | ---------------------------------- |
+| **Chức năng**       | Kết thúc vòng lặp.              | Bỏ qua phần còn lại của lần lặp.   |
+| **Phạm vi áp dụng** | Dừng vòng lặp gần nhất chứa nó. | Chỉ bỏ qua trong lần lặp hiện tại. |
