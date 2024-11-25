@@ -49,6 +49,10 @@
     - [1. Câu lệnh break](#1-câu-lệnh-break)
     - [2. Câu lệnh continue](#2-câu-lệnh-continue)
     - [3. So sánh break và continue](#3-so-sánh-break-và-continue)
+- [Mảng - Array](#mảng---array)
+  - [I. Mảng một chiều](#i-mảng-một-chiều)
+    - [1. Định nghĩa và tính chất](#1-định-nghĩa-và-tính-chất)
+    - [2. Khai báo mảng](#2-khai-báo-mảng)
 
 ---
 
@@ -814,3 +818,28 @@ printf("%d\n", tong);
 | ------------------- | ------------------------------- | ---------------------------------- |
 | **Chức năng**       | Kết thúc vòng lặp.              | Bỏ qua phần còn lại của lần lặp.   |
 | **Phạm vi áp dụng** | Dừng vòng lặp gần nhất chứa nó. | Chỉ bỏ qua trong lần lặp hiện tại. |
+
+---
+
+# Mảng - Array
+
+---
+
+## I. Mảng một chiều
+
+### 1. Định nghĩa và tính chất
+
+- **Định nghĩa**: Mảng một chiều là cấu trúc dữ liệu lưu trữ nhiều phần tử có cùng kiểu dữ liệu, nằm liền kề trong bộ nhớ.
+
+- **Tính chất**:
+  - Đơn giản, dễ sử dụng, và phổ biến.
+  - Truy xuất nhanh thông qua chỉ số.
+  - Kích thước cố định, không thể thay đổi sau khi khai báo.
+
+### 2. Khai báo mảng
+
+- **Cú pháp**: `Kiểu_Dữ_Liệu Tên_Mảng[Số_Lượng_Phần_Tử]`;
+
+- **Lưu ý**:
+  - Mảng chưa khởi tạo có giá trị ngẫu nhiên.
+  - Các phần tử không khởi tạo trong mảng được gán giá trị mặc định là 0 (nếu có một số phần tử được khởi tạo).
