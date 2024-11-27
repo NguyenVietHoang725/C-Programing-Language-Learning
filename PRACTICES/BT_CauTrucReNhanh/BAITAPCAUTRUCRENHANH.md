@@ -15,11 +15,11 @@
 - **Từ 251 đến 500 kWh tiếp theo:** Đơn giá là **1.7** đơn vị tiền tệ.
 - **Trên 500 kWh:** Đơn giá là **2.2** đơn vị tiền tệ.
 
-**Yêu cầu:** Viết chương trình tính số tiền điện phải trả cho \( n \) kWh điện năng tiêu thụ, với \( n \) là một số nguyên không âm và \( 0 \leq n \leq 1000 \).
+**Yêu cầu:** Viết chương trình tính số tiền điện phải trả cho `n` kWh điện năng tiêu thụ, với `n` là một số nguyên không âm và 0 $\leq$ n $\leq$ 1000.
 
 **Input:**
 
-- Một số nguyên không âm \( n \): Lượng điện năng tiêu thụ.
+- Một số nguyên không âm `n`: Lượng điện năng tiêu thụ.
 
 **Output:**
 
@@ -31,7 +31,7 @@
 
 ## Bài tập 2: Tìm Số Lớn Nhất
 
-Viết chương trình nhập vào **bốn số thực** \( a, b, c, d \). Sử dụng toán tử điều kiện hoặc cấu trúc `if` để tìm và in ra số lớn nhất trong bốn số.
+Viết chương trình nhập vào **bốn số thực** `a`, `b`, `c`, `d`. Sử dụng toán tử điều kiện hoặc cấu trúc `if` để tìm và in ra số lớn nhất trong bốn số.
 
 🔗 **Link tham khảo:** _(chưa có)_
 
@@ -39,7 +39,7 @@ Viết chương trình nhập vào **bốn số thực** \( a, b, c, d \). Sử 
 
 ## Bài tập 3: Chữ Số Lớn Nhất
 
-Viết chương trình nhập vào một số nguyên \( n \) gồm **ba chữ số**. Xác định và in ra chữ số lớn nhất trong số đó.
+Viết chương trình nhập vào một số nguyên `n` gồm **ba chữ số**. Xác định và in ra chữ số lớn nhất trong số đó.
 
 🔗 **Link tham khảo:** _(chưa có)_
 
@@ -57,9 +57,9 @@ Viết chương trình nhập vào một ngày, tháng, năm. Kiểm tra xem ng�
 
 Viết chương trình nhập vào điểm ba môn thi: Toán, Lý, Hóa. Xét và đưa ra kết quả như sau:
 
-- Nếu tổng điểm \( \geq 15 \) và không có môn nào dưới 4: In ra **"Đậu"**.
+- Nếu tổng điểm $\geq$ 15 và không có môn nào dưới 4: In ra **"Đậu"**.
   - Nếu đậu và các môn đều trên 5: Thêm lời phê **"Học đều các môn"**.
-  - Nếu đậu nhưng có môn \( \leq 5 \): Thêm lời phê **"Học chưa đều các môn"**.
+  - Nếu đậu nhưng có môn $\leq$ 5: Thêm lời phê **"Học chưa đều các môn"**.
 - Nếu không thỏa các điều kiện trên: In ra **"Thi hỏng"**.
 
 🔗 **Link tham khảo:** _(chưa có)_
