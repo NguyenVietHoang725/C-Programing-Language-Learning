@@ -8,37 +8,36 @@
 
 ## Bài tập 1: Tổng và Trung Bình Cộng Của Mảng
 
-Viết chương trình nhập vào một mảng gồm \( n \) số nguyên. Thực hiện các yêu cầu sau:
+Viết chương trình nhập vào một mảng gồm `n` số nguyên. Thực hiện các yêu cầu sau:
 
-1. Tính tổng của tất cả các phần tử trong mảng.
-2. Tìm giá trị lớn nhất trong mảng.
-3. Thực hiện các thao tác sau dựa trên lệnh đầu vào:
+1. Tìm giá trị lớn nhất trong mảng.
+2. Thực hiện các thao tác sau dựa trên lệnh đầu vào:
    - Nếu nhập **`s`**: In ra tổng các phần tử trong mảng.
    - Nếu nhập **`a`**: In ra trung bình cộng của các phần tử trong mảng, làm tròn đến **hai chữ số thập phân**.
 
 **Input:**
 
-- Số nguyên \( n \): Số lượng phần tử của mảng.
-- \( n \) số nguyên: Các phần tử trong mảng.
-- Một ký tự \( lệnh \) (`s` hoặc `a`).
+- Số nguyên `n`: Số lượng phần tử của mảng.
+- `n` số nguyên: Các phần tử trong mảng.
+- Một ký tự: (`s` hoặc `a`).
 
 **Output:**
 
-- Nếu nhập \( lệnh = "s" \): In ra tổng của các phần tử trong mảng.
-- Nếu nhập \( lệnh = "a" \): In ra trung bình cộng của các phần tử trong mảng (2 chữ số thập phân).
+- Nếu nhập kí tự `s`: In ra tổng của các phần tử trong mảng.
+- Nếu nhập kí tự `a`: In ra trung bình cộng của các phần tử trong mảng (2 chữ số thập phân).
 - Giá trị lớn nhất trong mảng.
 
-🔗 **Link tham khảo:** _(chưa có)_
+🔗 **Link tham khảo:** [Tổng và Trung Bình Cộng của Mảng](https://github.com/NguyenVietHoang725/LearningC/blob/main/PRACTICES/BT_MangMotChieu/Bai1.cpp)
 
 ---
 
 ## Bài tập 2: Đếm Số Lần Xuất Hiện và Phân Loại Số Chẵn, Lẻ
 
-Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và thực hiện các yêu cầu sau:
+Viết chương trình nhập vào một mảng gồm `n` số nguyên và thực hiện các yêu cầu sau:
 
 1. **Đếm số lần xuất hiện:**
 
-   - Đếm số lần xuất hiện của một số nguyên \( x \) trong mảng.
+   - Đếm số lần xuất hiện của một số nguyên `x` trong mảng.
 
 2. **Phân loại số chẵn và số lẻ:**
    - Nếu nhập **`c`**: Đếm và in ra tất cả các số **chẵn** trong mảng.
@@ -46,18 +45,18 @@ Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và t
 
 **Input:**
 
-- Một số nguyên \( n \): Số lượng phần tử của mảng.
-- \( n \) số nguyên: Các phần tử trong mảng.
-- Một lệnh \( lệnh \):
-  - \( x \): Số cần đếm (áp dụng khi lệnh là đếm số lần xuất hiện).
+- Một số nguyên `n`: Số lượng phần tử của mảng.
+- `n` số nguyên: Các phần tử trong mảng.
+- Một số nguyên `x` và một ký tự:
+  - `x`: Số cần đếm (áp dụng khi lệnh là đếm số lần xuất hiện).
   - `c`: Đếm và in các số chẵn.
   - `l`: Đếm và in các số lẻ.
 
 **Output:**
 
-- In ra số lần xuất hiện của \( x \).
-- Nếu \( lệnh = "c" \): In ra số lượng và danh sách các số chẵn.
-- Nếu \( lệnh = "l" \): In ra số lượng và danh sách các số lẻ.
+- In ra số lần xuất hiện của `x`.
+- Nếu nhập kí tự `c`: In ra số lượng và danh sách các số chẵn.
+- Nếu nhập kí tự `l`: In ra số lượng và danh sách các số lẻ.
 
 🔗 **Link tham khảo:** _(chưa có)_
 
@@ -65,7 +64,7 @@ Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và t
 
 ## Bài tập 3: Sắp Xếp Mảng Tăng Dần hoặc Giảm Dần
 
-Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và thực hiện các yêu cầu sau:
+Viết chương trình nhập vào một mảng gồm `n` số nguyên và thực hiện các yêu cầu sau:
 
 **Sắp xếp mảng:**
 
@@ -74,9 +73,9 @@ Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và t
 
 **Input:**
 
-- Một số nguyên \( n \): Số lượng phần tử của mảng.
-- \( n \) số nguyên: Các phần tử trong mảng.
-- Một lệnh \( lệnh \):
+- Một số nguyên `n`: Số lượng phần tử của mảng.
+- `n` số nguyên: Các phần tử trong mảng.
+- Một kí tự:
   - `t`: Sắp xếp mảng tăng dần.
   - `g`: Sắp xếp mảng giảm dần.
 
@@ -90,15 +89,16 @@ Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và t
 
 ## Bài tập 4: Kiểm Tra Số Nguyên Tố
 
-Viết chương trình nhập vào một mảng gồm \( n \) số nguyên. Kiểm tra và in ra tất cả các số nguyên tố trong mảng.
+Viết chương trình nhập vào một mảng gồm `n` số nguyên. Kiểm tra, đếm và in ra tất cả các số nguyên tố trong mảng.
 
 **Input:**
 
-- Số nguyên \( n \): Số lượng phần tử của mảng.
-- \( n \) số nguyên: Các phần tử trong mảng.
+- Số nguyên `n`: Số lượng phần tử của mảng.
+- `n` số nguyên: Các phần tử trong mảng.
 
 **Output:**
 
+- Số lượng số nguyên tố trong mảng.
 - Một mảng: Các số nguyên tố trong mảng ban đầu.
 
 🔗 **Link tham khảo:** _(chưa có)_
@@ -107,12 +107,12 @@ Viết chương trình nhập vào một mảng gồm \( n \) số nguyên. Ki�
 
 ## Bài tập 5: Tìm Phần Tử Lặp Đầu Tiên
 
-Viết chương trình nhập vào một mảng gồm \( n \) số nguyên. Tìm và in ra phần tử lặp lại đầu tiên trong mảng. Nếu không có phần tử nào lặp lại, in ra **"Không có phần tử lặp lại"**.
+Viết chương trình nhập vào một mảng gồm `n` số nguyên. Tìm và in ra phần tử lặp lại đầu tiên trong mảng. Nếu không có phần tử nào lặp lại, in ra **"Không có phần tử lặp lại"**.
 
 **Input:**
 
-- Số nguyên \( n \): Số lượng phần tử của mảng.
-- \( n \) số nguyên: Các phần tử trong mảng.
+- Số nguyên `n`: Số lượng phần tử của mảng.
+- `n` số nguyên: Các phần tử trong mảng.
 
 **Output:**
 
@@ -124,17 +124,17 @@ Viết chương trình nhập vào một mảng gồm \( n \) số nguyên. Tìm
 
 ## Bài tập 6: Xóa Phần Tử Khỏi Mảng
 
-Viết chương trình nhập vào một mảng gồm \( n \) số nguyên và một số nguyên \( x \). Xóa tất cả các phần tử có giá trị bằng \( x \) khỏi mảng.
+Viết chương trình nhập vào một mảng gồm `n` số nguyên và một số nguyên `x`. Xóa tất cả các phần tử có giá trị bằng `x` khỏi mảng.
 
 **Input:**
 
-- Số nguyên \( n \): Số lượng phần tử của mảng.
-- \( n \) số nguyên: Các phần tử trong mảng.
-- Số nguyên \( x \): Phần tử cần xóa.
+- Số nguyên `n`: Số lượng phần tử của mảng.
+- `n` số nguyên: Các phần tử trong mảng.
+- Số nguyên `x`: Phần tử cần xóa.
 
 **Output:**
 
-- Mảng sau khi đã xóa các phần tử có giá trị bằng \( x \).
+- Mảng sau khi đã xóa các phần tử có giá trị bằng `x`.
 
 🔗 **Link tham khảo:** _(chưa có)_
 
