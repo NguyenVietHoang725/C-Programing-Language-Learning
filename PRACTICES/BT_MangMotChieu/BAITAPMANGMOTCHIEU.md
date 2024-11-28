@@ -58,7 +58,7 @@ Viết chương trình nhập vào một mảng gồm `n` số nguyên và thự
 - Nếu nhập kí tự `c`: In ra số lượng và danh sách các số chẵn.
 - Nếu nhập kí tự `l`: In ra số lượng và danh sách các số lẻ.
 
-🔗 **Link tham khảo:** _(chưa có)_
+🔗 **Link tham khảo:** [Đếm Số Lần Xuất Hiện và Phân Loại Số Chẵn, Lẻ](https://github.com/NguyenVietHoang725/LearningC/blob/main/PRACTICES/BT_MangMotChieu/Bai2.cpp)
 
 ---
 
@@ -83,7 +83,7 @@ Viết chương trình nhập vào một mảng gồm `n` số nguyên và thự
 
 - Mảng đã được sắp xếp theo yêu cầu (tăng dần hoặc giảm dần).
 
-🔗 **Link tham khảo:** _(chưa có)_
+🔗 **Link tham khảo:** [Sắp Xếp Mảng Tăng Dần hoặc Giảm Dần](https://github.com/NguyenVietHoang725/LearningC/blob/main/PRACTICES/BT_MangMotChieu/Bai3.cpp)
 
 ---
 
