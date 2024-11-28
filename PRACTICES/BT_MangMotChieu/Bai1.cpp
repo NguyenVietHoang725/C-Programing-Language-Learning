@@ -42,4 +42,6 @@ int main() {
 	}
 	
 	printf("\nPhan tu lon nhat trong mang co gia tri bang %d", max);
+	
+	return 0;
 }
