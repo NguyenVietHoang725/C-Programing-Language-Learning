@@ -98,8 +98,8 @@ Viết chương trình nhập vào một mảng gồm `n` số nguyên. Kiểm t
 
 **Output:**
 
-- Số lượng số nguyên tố trong mảng.
 - Một mảng: Các số nguyên tố trong mảng ban đầu.
+- Số lượng số nguyên tố trong mảng.
 
 🔗 **Link tham khảo:** _(chưa có)_
 
