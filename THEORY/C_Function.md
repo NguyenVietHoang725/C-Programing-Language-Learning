@@ -61,7 +61,7 @@
   - **Kết thúc hàm**, chương trình quay lại vị trí sau lệnh gọi hàm trong `main`.
   - Việc gọi hàm có thể lặp lại nhiều lần, giúp tái sử dụng mã nguồn và tăng tính hiệu quả.
 
-![Gọi hàm](/Learning_C/Images/function_call.png)
+![Gọi hàm](../Images/function_call.png)
 
 - Ví dụ minh hoạ: Tính tổng hai số
 
