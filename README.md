@@ -41,11 +41,26 @@
   - [III. Vòng lặp do-while](./THEORY/C_Loops.md#iii-vòng-lặp-do-while)
   - [IV. Câu lệnh break và continue](./THEORY/C_Loops.md#iv-câu-lệnh-break-và-continue)
     - [1. Câu lệnh break](./THEORY/C_Loops.md#1-câu-lệnh-break)
-    - [2. Câu lệnh continue](./THEORY/C_Loops.md#2-câu-lệnh-continue)
+    - [2. Câu lệnh continue](./THEORY/C_Loops.md#2-câu-lệnh-continue)s
     - [3. So sánh break và continue](./THEORY/C_Loops.md#3-so-sánh-break-và-continue)
 - [Mảng - Array]()
-  - [I. Mảng một chiều]()
-    - [1. Định nghĩa và tính chất]()
-    - [2. Khai báo mảng]()
-
+  - [I. Mảng một chiều](./THEORY/C_One-DimensionalArray.md)
+    - [1. Định nghĩa và tính chất](./THEORY/C_One-DimensionalArray.md#1-định-nghĩa-và-tính-chất)
+    - [2. Khai báo mảng](./THEORY/C_One-DimensionalArray.md#2-khai-báo-mảng)
+    - [3. Các thao tác trên mảng](./THEORY/C_One-DimensionalArray.md#3-các-thao-tác-trên-mảng)
+    - [4. Mảng làm tham số](./THEORY/C_One-DimensionalArray.md#4-mảng-làm-tham-số)
+    - [5. Xoá phần tử](./THEORY/C_One-DimensionalArray.md#5-xoá-phần-tử)
+    - [6. Thao tác chèn](./THEORY/C_One-DimensionalArray.md#6-thao-tác-chèn)
+    - [7. Mảng đánh dấu](./THEORY/C_One-DimensionalArray.md#7-mảng-đánh-dấu)
+  - [II. Mảng hai chiều](./THEORY/C_Two-DimensionalArray.md)
+    - [1. Mảng 2 chiều](./THEORY/C_Two-DimensionalArray.md#1-mảng-2-chiều)
+    - [2. Nhập và Xuất Mảng 2 chiều](./THEORY/C_Two-DimensionalArray.md#2-nhập-và-xuất-mảng-2-chiều)
+    - [3. Mảng 2 chiều và Hàm](./THEORY/C_Two-DimensionalArray.md#3-mảng-2-chiều-và-hàm)
+   
+- [Struct - Cấu trúc](./THEORY/C_Struct.md) 
+  - [1. Struct là gì?](./THEORY/C_Struct.md#1-struct-là-gì-?)
+  - [2. Sử dụng typedef với Struct](./THEORY/C_Struct.md#2-sử-dụng-typedef-với-struct)
+  - [3. Struct lồng nhau](./THEORY/C_Struct.md#3-struct-lồng-nhau)
+  - [4. Struct làm tham số cho hàm](./THEORY/C_Struct.md#4-struct-làm-tham-số-cho-hàm)
+ 
 ---
