@@ -1,74 +1,78 @@
 #include <stdio.h>
 #include <math.h>
 
+int isPerfectSquare(int num) {
+    if (num < 0) return 0; 
+    int root = (int)sqrt(num);
+    return root * root == num;
+}
+
 int main() {
 	int n;
 	do {
-		printf("Nhap bac cua da thuc: ");
+		printf("Nhap so luong phan tu cua day so: ");
 		scanf("%d", &n);
 		if (n <= 0) {
 			printf("Gia tri khong hop le. Vui long nhap lai!\n");
 		}
 	} while (n <= 0);
 	
-	float a[100];
-	printf("Nhap lan luot %d he so cua da thuc:\n", n+1);
-	for (int i = 0; i <= n; i++) {
-		printf("a%d = ", i);
-		scanf("%f", &a[i]);
-	}
-	
-	printf("Da thuc bac %d vua nhap la: ", n);
-	for (int i = 0; i <= n; i++) {
-		if (i == 0) printf("%.2f ", a[i]);
-		else {
-			if (a[i] < 0) {
-				printf("- %.2fx^%d ", -(a[i]), i);
-			} else {
-				printf("+ %.2fx^%d ", a[i], i);
-			}
-		}
-	}
-	
-	float x;
-	printf("\n\nNhap so thuc t: ");
-	scanf("%f", &x);
-	float res1 = 0;
-	for (int i = 0; i <= n; i++) {
-		res1 += a[i] * pow(x, i);
-	} 
-	if (res1) printf("So thuc x khong phai la nghiem cua da thuc!\n");
-	else printf("So thuc x la nghiem cua da thuc!\n");
-	
-	float res2 = 0;
-	for (int i = 1; i <= n; i++) {
-		res2 += i * a[i] * pow(x, i-1);
-	}
-	printf("Dao ham P'[%.2f] = %.2f\n", x, res2);
-	
-	float max = -999999;
-	for (int i = 0; i <= n; i++) {
-		if (i % 2 != 0 && max < a[i]) {
-			max = a[i];
-		}
-	}
-	if (n < 1) printf("\nKhong ton tai he so bac le!\n");
-	else {
-		printf("\nHe so bac le lon nhat la: %.2f\n", max);
-	}
-	
+	int check0 = 0; 
+	int a[100];
+	printf("\nNhap lan luot %d phan tu cua mang:\n", n);
 	for (int i = 0; i < n; i++) {
-		for (int j = i+1; j <= n; j++) {
-			float temp = a[i];
-			if (a[i] < a[j]) {
-				a[i] = a[j];
-				a[j] = temp;
-			}
+		printf("a[%d] = ", i);
+		scanf("%d", &a[i]);
+		if (a[i] == 0) check0 = 1;
+	}
+	
+	printf("\nMang vua nhap la: ");
+	for (int i = 0; i < n; i++) {
+		if (i != n-1) {
+			printf("%d, ", a[i]);
+		} else {
+			printf("%d,\n", a[i]);
 		}
 	}
-	printf("\nHe so da thuc duoc sap xep giam dan la: ");
-	for (int i = 0; i <= n; i++) {
-		if (i != n) printf("%.2f, ", a[i]);
-		else printf("%.2f.\n", a[i]);
+	
+	int max = -9999999;
+	int check4 = 0;
+	for (int i = 0; i < n; i++) {
+		if (a[i] % 4 && a[i] > max) {
+			max = a[i];
+			check4 = 1;
+		}
 	}
+	
+	if (check4) {
+		printf("\nPhan tu chia het cho 4 lon nhat trong day so la: %d\n", max);
+	} else {
+		printf("\nKhong ton tai phan tu nao chia het cho 4\n");
+	}
+	
+	if (check0) {
+		printf("\nKhong tinh duoc phep toan\n");
+	} else {
+		float res = 0;
+		for (int i = 1; i < n; i++) {
+			res += a[i-1]*1.0 / a[i];
+		}
+		printf("\nKet qua cua bieu thuc bang %.2f\n", res);
+	}
+	
+	int allPerfectSquare = 1;
+    for (int i = 0; i < n; i++) {
+        if (!isPerfectSquare(a[i])) {
+            allPerfectSquare = 0;
+            break;
+        }
+    }
+
+    if (allPerfectSquare) {
+        printf("\nTat ca cac phan tu trong mang deu la so chinh phuong.\n");
+    } else {
+        printf("\nKhong phai tat ca cac phan tu trong mang deu la so chinh phuong.\n");
+    }
+
+    return 0;
 }
