@@ -4,7 +4,7 @@
 
 ## 1. Câu lệnh if
 
-Câu lệnh if được sử dụng khi bạn cần kiểm tra một điều kiện trước khi thực hiện những câu lệnh khi điều kiện đó có giá trị đúng.
+**Câu lệnh if** được sử dụng khi bạn cần `kiểm tra` một điều kiện trước khi thực hiện những câu lệnh khi điều kiện đó có `giá trị đúng`.
 
 - Cú pháp:
 
@@ -14,7 +14,7 @@ Câu lệnh if được sử dụng khi bạn cần kiểm tra một điều ki�
     }
 ```
 
-- Điều kiện ở trong if thường là các phép so sánh, biểu thức trả về giá trị đúng sai. Khi điều kiện này có giá trị đúng thì các câu lệnh bên trong ngoặc nhọn của if sẽ được thực hiện, ngược lại thì các câu lệnh này sẽ bị bỏ qua.
+- Điều kiện ở trong if thường là các `phép so sánh`, biểu thức trả về giá trị `đúng sai`. Khi điều kiện này có giá trị đúng thì các câu lệnh bên trong ngoặc nhọn của if sẽ được thực hiện, ngược lại thì các câu lệnh này sẽ bị bỏ qua.
 
 - **Chú ý**: Trong C các giá trị khác không được coi là đúng nêu bạn có thể sử dụng nó để làm điều kiện cho if. Nếu số mà bạn truyền vào làm điều kiện cho if khác 0 thì code trong if sẽ thực thi và ngược lại.
 
@@ -41,7 +41,7 @@ Câu lệnh if được sử dụng khi bạn cần kiểm tra một điều ki�
 
 ## 2. Câu lệnh if else
 
-Câu lệnh if sẽ giúp thực thi khi điều kiện trong if đúng, còn trong trường hợp sai thì khối lệnh bên trong else sẽ được thực hiện.
+**Câu lệnh if** sẽ giúp thực thi khi điều kiện trong if đúng, còn trong trường hợp sai thì khối lệnh bên trong **else** sẽ được thực hiện.
 
 If có thể không cần đến else nhưng else thì cần if đi trước.
 
@@ -62,7 +62,7 @@ If có thể không cần đến else nhưng else thì cần if đi trước.
 
 ## 3. Câu lệnh if else lồng nhau
 
-If else có thể lồng vào nhau tức là bên trong khối if else cũng có thể có thêm nhiều câu lệnh if else khác.
+**If else** có thể lồng vào nhau tức là bên trong khối **if else** cũng có thể có thêm nhiều câu lệnh **if else** khác.
 
 Thông thường if else lồng nhau được sử dụng khi điều kiện của bài toán của bạn quá lớn và cần chia nhỏ ra làm nhiều phần để kiểm tra từng bước một.
 
@@ -203,7 +203,7 @@ Chú ý: Các câu lệnh bên trong case sẽ được kết thúc bởi câu l
 
 # Câu lệnh goto
 
-Câu lệnh goto cho phép di chuyển tới các vị trí cụ thể trong chương trình bằng cách gán nhãn cho các câu lệnh.
+**Câu lệnh goto** cho phép di chuyển tới các vị trí cụ thể trong chương trình bằng cách gán nhãn cho các câu lệnh.
 
 - Cú pháp:
 
@@ -214,9 +214,10 @@ Câu lệnh goto cho phép di chuyển tới các vị trí cụ thể trong ch�
     // Các câu lệnh
 ```
 
-Giải thích:
-Khi goto nhãn; được thực hiện, chương trình bỏ qua các câu lệnh phía trước nhãn và tiếp tục thực thi từ nhãn.
-Nếu không có goto, chương trình sẽ chạy tuần tự.
+- Giải thích:
+
+  - Khi goto nhãn; được thực hiện, chương trình bỏ qua các câu lệnh phía trước nhãn và tiếp tục thực thi từ nhãn.
+  - Nếu không có goto, chương trình sẽ chạy tuần tự.
 
 - Ví dụ:
 

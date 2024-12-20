@@ -4,7 +4,7 @@
 
 ## 1. Vì sao nên Chú thích khi viết code
 
-Chú thích không được coi là mà nguồn và sẽ được loại bỏ bởi trình biên dịch khi biên dịch mã nguồn của bạn.
+**Chú thích** không được coi là mà nguồn và sẽ được `loại bỏ` bởi trình biên dịch khi biên dịch mã nguồn của bạn.
 
 Những chức năng chính của chú thích :
 
