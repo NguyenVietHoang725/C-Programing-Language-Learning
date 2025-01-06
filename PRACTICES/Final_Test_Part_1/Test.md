@@ -14,9 +14,30 @@ Viết chương trình:
 3. Tính độ dài đường gấp khúc đi qua các điểm chẵn: Tính tổng độ dài đường gấp khúc đi qua các điểm chẵn A2, A4, A6, ...
 4. Tính độ dài trung bình của các đoạn thẳng ngắn hơn giá trị cho trước: Tính độ dài trung bình của các đoạn thẳng nối giữa hai điểm bất kỳ trong dãy, có độ dài nhỏ hơn $d$ ($d$ được nhập từ bàn phím).
 
+Bài giải:
+
 ## 1.2. Dạng "Dãy số"
 
+Đề bài:
+
+1. Nhập và xuất dãy số nguyên a1, a2, ... an sau đó thực hiện các công việc sau
+2. Tìm giá trị lớn nhất của những số chia hết cho 4 trong dãy
+3. Tính giá trị biểu thức a1/a2+a2/a3+…+an-1/an+an/a1 nếu không tính được in ra “khong tinh duoc”
+4. Kiểm tra dãy có phải toàn là số chính phương hay không?
+
+Bài giải:
+
 ## 1.3. Dạng "Đa thức"
+
+Đề bài:
+Viết chương trình
+
+- Nhập và xuất các hệ số thực của đa thức P(x) = a0 + a1x+ ... + anxn
+- Nhập số thực t kiểm tra t có là nghiệm của đa thức P(t) = 0 và tính đạo hàm P’(t)
+- Tìm giá trị lớn nhất của các hệ số bậc lẻ
+- Sắp xếp các hệ số giảm dần và xuất ra màn hình
+
+Bài giải:
 
 ---
 
