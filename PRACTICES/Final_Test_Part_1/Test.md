@@ -10,7 +10,7 @@
 Viết chương trình:
 
 1. Nhập và xuất dãy điểm: Nhập dãy điểm trên mặt phẳng thực A1(x1, y1), A2(x2, y2), ..., An(xn, yn).
-2. Đếm số điểm nằm bên trong đường tròn: Đếm số điểm nằm bên trong đường tròn có tâm $O(x_0,y_0)$ và bán kính $R$ (nhập $x_0, y_0$ và $R$ từ bàn phím)
+2. Đếm số điểm nằm bên trong đường tròn: Đếm số điểm nằm bên trong đường tròn có tâm $O$ và bán kính $R$ (nhập $R$ từ bàn phím)
 3. Tính độ dài đường gấp khúc đi qua các điểm chẵn: Tính tổng độ dài đường gấp khúc đi qua các điểm chẵn A2, A4, A6, ...
 4. Tính độ dài trung bình của các đoạn thẳng ngắn hơn giá trị cho trước: Tính độ dài trung bình của các đoạn thẳng nối giữa hai điểm bất kỳ trong dãy, có độ dài nhỏ hơn $d$ ($d$ được nhập từ bàn phím).
 
